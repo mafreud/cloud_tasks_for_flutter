@@ -29,6 +29,7 @@ dependencies:
   cloud_firestore: ^0.14.2
   cupertino_icons: ^1.0.0
   firebase_core: ^0.5.1
+  flutter_riverpod: ^0.12.1
   pedantic: ^1.9.2
 
 dev_dependencies:
