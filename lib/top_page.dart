@@ -24,7 +24,6 @@ class TopPage extends ConsumerWidget {
             return CircularProgressIndicator();
           }
           int itemCount = snapshot.data.docs.length;
-
           return ListView.builder(
             itemCount: itemCount,
             itemBuilder: (BuildContext context, int index) {
@@ -53,21 +52,6 @@ class TopPage extends ConsumerWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              TextButton(
-                child: Text(
-                  '削除',
-                  style: TextStyle(color: Colors.purple[900]),
-                ),
-                onPressed: () {/* ... */},
-              ),
-              const SizedBox(width: 8),
-              TextButton(
-                child: Text(
-                  '複製',
-                  style: TextStyle(color: Colors.purple[900]),
-                ),
-                onPressed: () {/* ... */},
-              ),
               const SizedBox(width: 8),
             ],
           ),
